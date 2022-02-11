@@ -13,5 +13,27 @@ namespace ConsoleApp
         {
 
         }
+        public override string Go()
+        {
+            return $"{City},{Settlement},{Distance}";
+        }
+
+        public override string GetSettlement()
+        {
+
+            return $"{Settlement}";
+        }
+        public override string ShowInfo()
+        {
+
+            return $"{Type}: ({NameCar}, {ColorCar}), {GetMileage()} km";
+        }
+        public override int GetMileage()
+        {
+            int sum = 0;
+            sum = Distance + Kilometrage;
+            if (sum >= 1000000) sum -= 1000000;
+            return sum;
+        }
     }
 }
