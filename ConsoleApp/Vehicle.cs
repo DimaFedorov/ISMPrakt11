@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class Vehicle
+    public abstract class Vehicle
     {
+        public abstract string Go();
+        public abstract int GetMileage();
+        public abstract string ShowInfo();
+        public abstract string GetSettlement();
     }
 }
