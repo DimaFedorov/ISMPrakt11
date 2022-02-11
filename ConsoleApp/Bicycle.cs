@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    public class Bicycle
+    public class Bicycle:Vehicle
     {
         public string Type { get; set; }
         public string NameBicycle { get; set; }
